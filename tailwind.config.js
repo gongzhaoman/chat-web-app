@@ -13,6 +13,20 @@ module.exports = {
       },
     },
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.foreground'),
+            h1: {
+              fontSize: theme('fontSize.2xl'),
+              color: theme('colors.primary.DEFAULT'),
+            },
+            p: {
+              marginBottom: theme('spacing.4'),
+            },
+          },
+        },
+      }),
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -70,5 +84,5 @@ module.exports = {
     },
   },
   // eslint-disable-next-line no-undef
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
 }

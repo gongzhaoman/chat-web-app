@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 
 function App() {
   const markdownText = `
-  # Hello world
+  ### Hello world
   This is a paragraph
   `
 
