@@ -5,6 +5,12 @@ function App() {
   const markdownText = `
   ### Hello world
   This is a paragraph
+
+  \`\`\`tsx
+  const App = () => {
+    return <div>Hello world</div>
+  }
+  \`\`\`
   `
 
   return (
