@@ -1,11 +1,11 @@
 import MarkdownRenderer from '@/components/MarkdownRenderer'
-import { Button } from '@/components/ui/button'
+
+import ChatBubble from './components/ChatBubble'
 
 function App() {
   const markdownText = `
-  ### Hello world
   This is a paragraph
-
+  ### Hello world
   \`\`\`tsx
   const App = () => {
     return <div>Hello world</div>
@@ -15,9 +15,9 @@ function App() {
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
-      <Button>Click me</Button>
-      hello world
-      <MarkdownRenderer markdownText={markdownText} />
+      <ChatBubble sender={'You'}>
+        <MarkdownRenderer markdownText={markdownText} />
+      </ChatBubble>
     </div>
   )
 }

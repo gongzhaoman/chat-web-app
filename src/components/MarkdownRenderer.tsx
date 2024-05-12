@@ -13,7 +13,12 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ markdownText }) => 
     return { __html: cleanHTML }
   }
 
-  return <div className="markdown prose w-full break-words" dangerouslySetInnerHTML={getMarkdownText()} />
+  return (
+    <div
+      className="markdown prose w-full break-words"
+      dangerouslySetInnerHTML={getMarkdownText()}
+    />
+  )
 }
 
 export default MarkdownRenderer

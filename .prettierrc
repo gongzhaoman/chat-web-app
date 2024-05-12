@@ -2,7 +2,7 @@
   "singleQuote": true,
   "semi": false,
   "trailingComma": "all",
-  "printWidth": 240,
+  "printWidth": 100,
   "plugins": [
       "prettier-plugin-tailwindcss"
   ]
